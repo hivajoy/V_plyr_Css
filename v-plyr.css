@@ -1,0 +1,98 @@
+
+   
+.custom-video {
+  width:100%;
+  }
+    .video-container {
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto;
+      top:50px;
+}
+
+    
+#loadingIcon {
+  font-size: 40px;
+  color: #ccc;
+  position: absolute;
+  left:45%;
+  top:38%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  
+}
+    
+    .controls i {
+      margin: 0px 7.5px;
+      margin-bottom:5px;
+      /* Adjust the margin to increase the gap */
+    }
+
+.progress-bar-container {
+  position: relative;
+  width: 100%;
+  bottom: 40px;
+}
+
+.time-display {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+}
+
+.progress-bar {
+  width: calc(70% - 20px);
+  bottom: 40px;
+  color: orange;
+}
+
+.current-time {
+  margin-left: 5px;
+  font-size: 13px;
+}
+
+.total-time {
+  margin-right: 5px;
+  font-size: 13px;
+}
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px; /* Adjust the size of the play icon */
+  color: white; /* Adjust the color of the play icon */
+  cursor: pointer;
+}
+
+    
+
+
+    /* Hide default browser controls */
+    .custom-video::-webkit-media-controls {
+      display: none !important;
+    }
+
+    .custom-video::-webkit-media-controls-enclosure {
+      display: none !important;
+    }
+
+    .custom-video::-webkit-media-controls-panel {
+      display: none !important;
+    }
+  
